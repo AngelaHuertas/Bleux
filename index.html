@@ -4,53 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bleux</title>
-    <link rel="stylesheet" href="./styles/bleux.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
 
 </head>
 <body>
     <header>
-        <section class="prin">
+        <section class="header">
             <img src="./assets/images/logo.png" alt="Logo principal de la pagina" class="logo">
-            <div class="derecha">
-                <ul>
-                    <li>About</li>
-                    <li>Features</li>
-                    <li>Use case</li>
-                    <li>Pricing</li>
-                </ul>
-            </div>
 
-            <Button>Download</Button>
+            <!-- Label para el icono del menú de hamburguesa -->
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+            <!-- Checkbox invisible que controla el menú -->
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+            
+                <div class="derecha">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#" id="b">About</a></li>
+                            <li><a href="#">Features</a></li>
+                            <li><a href="#">Use case</a></li>
+                            <li><a href="#">Pricing</a></li>
+                        </ul>
+                    </nav>    
+                </div>
+
+                <Button>Download</Button>
         </section>
     </header>
 
     <main>
-        <section>
-            <h1>Product Page</h1>
-            <p>We built this template to help you create modern and beautiful marketing page.</p>
-            <button>Download it now</button>
-            <button>Features</button>
-        </section>
+        <section class="parte1">
 
-        <section>
-            <img src="./assets/images/phone.png" alt="Telefono">
+            <div class="info">
+                <div class="contenedor">
+                    <h1>Product Page</h1>
+                    <p>We built this template to help you create modern and beautiful marketing page.</p>
+                    <div class="botones">
+                        <button class="boton1">Download it now</button>
+                        <button class="boton2">Features</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ima">
+                <img src="./assets/images/phone.png" alt="Telefono">
+            </div>
         </section>
         
-        <section>
+        <section class="parte2">
             <h2>Fonctionnalités</h2>
 
-            <div>
-                <img src="./assets/images/laptop.png" alt="">
+            <div class="contenedor2">
+                <div class="centrar">
+                    <div>
+                        <img src="./assets/images/laptop.png" alt="laptop">
+                    </div>
+                </div>
 
-                <h3>Alpha Screenshot</h3>
-                <p>This is a placeholder text.</p>
+                <div class="centrar">
+                    <div class="info2">
+                        <h3>Alpha Screenshot</h3>
+                        <p>This is a placeholder text. Replace it with your awesome call to action text. Develop stunning product website easily with this template.</p>
+                        <h4 class="texto-con-palito">Marketing Page</h4>
+                        <ul>
+                            <li><i class='bx bx-check-circle'></i>Based on Bootstrap 4</li>
+                            <li><i class='bx bx-check-circle'></i>Modern and creative</li>
+                            <li><i class='bx bx-check-circle'></i>Optimized for mobile devices</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
+        <section class="parte3">
+            <div class="info3">
+                <h2>Plans & Pricing</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo exercitationem aut repudiandae rerum aperiam sit voluptatibus modi pariatur, molestiae quo quod at minima ex quibusdam dignissimos ipsa deserunt suscipit blanditiis. Dolor sit amet consectetur adipisicing elit. Commodi dolor non labore placeat dolores eum nulla officiis, enim fugit, illo repellendus amet aliquam sint laborum dicta, tempora laboriosam? Libero, nihil.</p>
+            </div>
 
+            <div class="planes">
+                <div class="card">
+                    <img src="./assets/images/hoja.png" alt="hoja">
+                    <h3 class="tarjeta1">Lite</h3>
+
+                    <div class="color">
+                        <p class="moneda"> <b class="pres">$0</b> <b class="tim">Free</b></p>
+                    </div>
+
+                    <ul>
+                        <li class="star"><i class='bx bxs-star' ></i>Full Components</li>
+                        <li><i class='bx bx-check'></i>Future Updates</li>
+                        <li><i class='bx bx-check'></i>Documentation</li>
+                        <li><i class='bx bx-check'></i>Customer Support</li>
+                        <li class="x"><i class='bx bx-x' id="x"></i>Cool Option</li>
+                    </ul>
+                    <p class="text">Ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis, fugiat cumque deleniti quis accusamus architecto.</p>
+
+                    <div class="color">
+                        <button class="botonColor1">Subscribe Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/nube.png" alt="nube">
+                    <h3 class="tarjeta">Standard</h3>
+
+                    <div class="color">
+                        <p class="moneda"> <b class="pres">$24</b> <b class="tim">per month</b></p>
+                    </div>
+                    <ul>
+                        <li>
+                            <i class='bx bxs-star' id="x"></i>Full Components</li>
+                        <li>
+                            <i class='bx bx-check' id="x"></i>Future Updates</li>
+                        <li>
+                            <i class='bx bx-check' id="x"></i>Documentation</li>
+                        <li>
+                            <i class='bx bx-check' id="x"></i>Customer Support</li>
+                        <li>
+                            <i class='bx bx-x' id="x"></i>Cool Option</li>
+                    </ul>
+                    <p class="text">Ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis, fugiat cumque deleniti quis accusamus architecto.</p>
+
+                    <div class="color">
+                        <button class="botonColor">Subscribe Now</button>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/images/maletin.png" alt="maletin">
+                    <h3 class="tarjeta">Ultimate</h3>
+
+                    <div class="color">
+                        <p class="moneda"><b class="pres">$ 400</b> <b class="time">per user/ year</b></p>
+                    </div>
+
+                    <ul>
+                        <li>
+                            <i class='bx bxs-star' id="x"></i>Full Components</li>
+                        <li>
+                            <i class='bx bx-check' id="x"></i>Future Updates</li>
+                        <li>
+                            <i class='bx bx-check' id="x"></i>Documentation</li>
+                        <li>
+                            <i class='bx bx-check' id="x"></i>Customer Support</li>
+                        <li>
+                            <i class='bx bx-x' id="x"></i>Cool Option</li>
+                    </ul>
+                    <p class="text">Ipsum dolor sit amet consectetur adipisicing elit. Blanditiis debitis, fugiat cumque deleniti quis accusamus architecto.</p>
+
+                    <div class="color">
+                        <button class="botonColor">Subscribe Now</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <footer>
         <p>&copy; Website made by <b>Mivfx</b> - contact@address.com </p>
 
+        <div class="imagenes">
+            <img src="./assets/images/facebook.png" alt="facebook">
+            <img src="./assets/images/twitter.png" alt="twitter">
+            <img src="./assets/images/in.png" alt="linkedin">
+            <img src="./assets/images/insta.png" alt="instagram">
+        </div>
     </footer>
